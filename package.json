@@ -1,0 +1,45 @@
+{
+  "name": "sv-testamentsvittne",
+  "version": "0.1.0",
+  "description": "Validate Swedish personnummer and check who may witness a will under 10 kap. 4 § ärvdabalken.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test test/*.test.js"
+  },
+  "keywords": [
+    "sweden",
+    "personnummer",
+    "samordningsnummer",
+    "testamente",
+    "ärvdabalken",
+    "legal-tech",
+    "typescript"
+  ],
+  "author": "Vittnet",
+  "license": "MIT",
+  "homepage": "https://vittnet.nu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrendTweekers/sv-testamentsvittne.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
